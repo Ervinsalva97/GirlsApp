@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:clipToOutline="true"
+    android:background="#8d8de9"
+    android:layout_margin="5dp"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#8d8de9"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="45dp"
+        >
+
+        <ImageView
+            android:id="@+id/imgLogoIs"
+            android:layout_width="250dp"
+            android:layout_height="91dp"
+            android:layout_marginBottom="12dp"
+            tools:layout_editor_absoluteX="141dp"
+            tools:layout_editor_absoluteY="174dp"
+            android:src="@mipmap/logo_login" />
+
+        <EditText
+            android:id="@+id/txtcorreo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="Correo"
+            android:textColorHint="#ffffff"
+            android:defaultFocusHighlightEnabled="true"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="12dp"
+            tools:ignore="TouchTargetSizeCheck"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/txtpass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="Contraseña"
+            android:textColorHint="#ffffff"
+            android:defaultFocusHighlightEnabled="true"
+            android:inputType="textPassword"
+            android:layout_marginBottom="12dp"
+            tools:ignore="TouchTargetSizeCheck"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/btnIs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#b0a0e1"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:paddingRight="25dp"
+            android:paddingLeft="25dp"
+            app:cornerRadius="50dp"
+            android:text="Iniciar Sesion"
+            android:layout_marginBottom="10dp"/>
+
+
+        <Button
+            android:id="@+id/btnRegistrar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="#484877"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:paddingRight="25dp"
+            android:paddingLeft="25dp"
+            app:cornerRadius="50dp"
+            android:text="Registrar" />
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
