@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "504153821635",
+    "project_id": "girlsapp-1d860",
+    "storage_bucket": "girlsapp-1d860.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:504153821635:android:798db513d0ae31919bad76",
+        "android_client_info": {
+          "package_name": "com.salazarv.girlsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "504153821635-312erupefrjiso1i28honhlbi2r6sqr5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVr_oZ54_jY6U1joOkee9FLhlvEoJ_0Fk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "504153821635-312erupefrjiso1i28honhlbi2r6sqr5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
