@@ -1,33 +1,34 @@
 {
   "project_info": {
-    "project_number": "218502030906",
-    "project_id": "girlsapp-a9b8a",
-    "storage_bucket": "girlsapp-a9b8a.appspot.com"
+    "project_number": "8820661292",
+    "firebase_url": "https://girlsapp-84e07-default-rtdb.firebaseio.com",
+    "project_id": "girlsapp-84e07",
+    "storage_bucket": "girlsapp-84e07.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:218502030906:android:5d8dbf38986c2ecd89f703",
+        "mobilesdk_app_id": "1:8820661292:android:691e7061696b6ef6248589",
         "android_client_info": {
           "package_name": "com.salazarv.girlsapp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "218502030906-dbi4omd4et4th7c5fpqkffm6p5gg2g94.apps.googleusercontent.com",
+          "client_id": "8820661292-2rr6s7k9r3j2378tjk69hfbmq0u2d39a.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyD6kt88L_m4_wa7yO70kJpgeGTH1fFFu7A"
+          "current_key": "AIzaSyAuYcPLFnVWOi74aMW1EUbtW9GnDllNTU0"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "218502030906-dbi4omd4et4th7c5fpqkffm6p5gg2g94.apps.googleusercontent.com",
+              "client_id": "8820661292-2rr6s7k9r3j2378tjk69hfbmq0u2d39a.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

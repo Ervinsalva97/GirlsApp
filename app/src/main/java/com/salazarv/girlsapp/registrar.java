@@ -22,7 +22,9 @@ public class registrar extends AppCompatActivity {
     EditText txtNombre,txtApellidos,txtTelefono,txtCorreo,txtFecNac,txtpass1,txtpass2;
     Button btnRegistrar;
 
-    private FirebaseAuth mAuth;
+    FirebaseAuth mAuth;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
