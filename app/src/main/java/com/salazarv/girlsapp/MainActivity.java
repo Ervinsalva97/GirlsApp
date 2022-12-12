@@ -1,10 +1,5 @@
 package com.salazarv.girlsapp;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentTransaction;
-
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,6 +8,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -45,7 +43,14 @@ public class MainActivity extends AppCompatActivity {
         //Evento onClic al boton btn_ingresar
         btn_Is.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) { iniciarSesion(); }
+            public void onClick(View view) {
+
+                iniciarSesion();
+
+                Intent intentPrincipal = new Intent(MainActivity.this, Principal.class);
+                startActivity(intentPrincipal);
+
+            }
         });
 
         observador();
