@@ -41,14 +41,14 @@ public class registrar extends AppCompatActivity {
 
         txtFecNac.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
                 CalendarView.generateViewId();
             }
         });
 
         btnRegistrar.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
                 registrar();
             }
         });
