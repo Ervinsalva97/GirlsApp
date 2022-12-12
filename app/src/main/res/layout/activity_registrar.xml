@@ -62,19 +62,6 @@
 
 
   <EditText
-      android:id="@+id/txtCorreo"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_weight="1"
-      android:layout_margin="5dp"
-      android:ems="10"
-      android:textColor="#bb99b7"
-      android:textColorHint="#AF9FE0"
-      android:inputType="textEmailAddress"
-      android:hint="Correo"/>
-
-
-  <EditText
       android:id="@+id/txtFecNac"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
@@ -85,6 +72,18 @@
       android:textColorHint="#AF9FE0"
       android:inputType="date"
       android:hint="Fecha de Nacimiento"/>
+
+  <EditText
+      android:id="@+id/txtCorreo"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:layout_margin="5dp"
+      android:ems="10"
+      android:textColor="#bb99b7"
+      android:textColorHint="#AF9FE0"
+      android:inputType="textEmailAddress"
+      android:hint="Correo"/>
 
 
   <EditText
