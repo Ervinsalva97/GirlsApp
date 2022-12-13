@@ -4,16 +4,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragment.ConfiguracionFragment"
-    android:background="#3f7ca3">
+    android:background="#C4A0E8">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#000000"
-        android:layout_gravity="center"
-        android:textStyle="bold"
+        android:layout_gravity="center|top"
+        android:text="Configuración"
+        android:textColor="#FFFFFF"
+        android:layout_margin="20dp"
         android:textSize="24sp"
-        android:text="Modulo CONFIGURACION" />
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnCs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cerrar Sesión"
+        android:layout_margin="25dp"
+        android:layout_gravity="center|bottom"
+        />
+
 
 </FrameLayout>
