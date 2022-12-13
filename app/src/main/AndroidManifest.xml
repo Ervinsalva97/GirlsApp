@@ -15,6 +15,13 @@
         android:theme="@style/Theme.GirlsApp"
         tools:targetApi="31">
         <activity
+            android:name=".MainActivity2"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".registrar"
             android:exported="false">
             <meta-data

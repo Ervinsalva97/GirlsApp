@@ -64,14 +64,14 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
             android:backgroundTint="#b0a0e1"
-            android:paddingTop="12dp"
-            android:paddingBottom="12dp"
-            android:paddingRight="25dp"
             android:paddingLeft="25dp"
-            app:cornerRadius="50dp"
+            android:paddingTop="12dp"
+            android:paddingRight="25dp"
+            android:paddingBottom="12dp"
             android:text="Iniciar Sesion"
-            android:layout_marginBottom="10dp"/>
+            app:cornerRadius="50dp" />
 
 
         <Button

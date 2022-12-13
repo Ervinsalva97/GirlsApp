@@ -1,6 +1,5 @@
 package com.salazarv.girlsapp;
 
-import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -44,22 +43,17 @@ public class MainActivity extends AppCompatActivity {
         btn_Is.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 iniciarSesion();
-
-                Intent intentPrincipal = new Intent(MainActivity.this, Principal.class);
-                startActivity(intentPrincipal);
-
             }
         });
+
 
         observador();
 
         btn_Registrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intentRegistrar = new Intent(MainActivity.this,registrar.class);
-                startActivity(intentRegistrar);
+                startActivity(new Intent(MainActivity.this,registrar.class));
 
             }
         });
@@ -83,26 +77,32 @@ public class MainActivity extends AppCompatActivity {
         }
 
 //          Mostramos un progressDialog para esperar la confirmación de Firebase
-        ProgressDialog dialog = new ProgressDialog(this);
-        dialog.setTitle("Autentificando");
-        dialog.setMessage("Espere por Favor...");
-        dialog.setCancelable(false);
-        dialog.show();
+//        ProgressDialog dialog = new ProgressDialog(this);
+//        dialog.setTitle("Autentificando");
+//        dialog.setMessage("Espere por Favor...");
+//        dialog.setCancelable(false);
+//        dialog.show();
 
 //          Autenticación al usuario si se encuentra registrado en Firebase en firebase (Autentication)
         mAuth.signInWithEmailAndPassword(email, clave).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()) {
-                    dialog.dismiss();
+
+                    finish();
+                    startActivity(new Intent(MainActivity.this, MainActivity2.class));
+//                    dialog.dismiss();
                     Toast.makeText(MainActivity.this, "Si se ha logeado correctamente", Toast.LENGTH_SHORT).show();
                 } else {
-                    dialog.dismiss();
+//                    dialog.dismiss();
                     Toast.makeText(MainActivity.this, "Usuario y/o contrasñea incorrecta", Toast.LENGTH_SHORT).show();
                 }
             }
         });
+
+
     }
+
 
     private void observador() {
         mAuthStateListener = firebaseAuth -> {
@@ -111,6 +111,8 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(this,"No hay sesion activa", Toast.LENGTH_SHORT).show();
             }else {
                 Toast.makeText(this,"las ession esta activa", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(MainActivity.this, MainActivity2.class));
+                finish();
             }
         };
     }

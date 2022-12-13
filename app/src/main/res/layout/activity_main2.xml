@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Principal">
+    tools:context=".MainActivity2">
 
     <FrameLayout
         android:id="@+id/contenerdor_fragment"
@@ -27,6 +27,5 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/bottom_nav_menu" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

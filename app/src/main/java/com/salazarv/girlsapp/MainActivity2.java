@@ -7,24 +7,25 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.salazarv.girlsapp.databinding.ActivityPrincipalBinding;
+import com.salazarv.girlsapp.databinding.ActivityMain2Binding;
 import com.salazarv.girlsapp.fragment.ConfiguracionFragment;
 import com.salazarv.girlsapp.fragment.InicioFragment;
 import com.salazarv.girlsapp.fragment.PerfilFragment;
 
-public class Principal extends AppCompatActivity {
-
-    ActivityPrincipalBinding binding;
+public class MainActivity2 extends AppCompatActivity {
+    
+    
+    ActivityMain2Binding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityPrincipalBinding.inflate(getLayoutInflater());
+//        setContentView(R.layout.activity_main2);
+        binding = ActivityMain2Binding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         reemplazarFragment(new InicioFragment());
-
+        
         binding.bottomNavigationView.setOnItemSelectedListener(item -> {
-
             switch (item.getItemId()){
                 case R.id.menu_inicio:
                     reemplazarFragment(new InicioFragment());
@@ -38,8 +39,8 @@ public class Principal extends AppCompatActivity {
             }
 
             return true;
-
         });
+        
     }
 
     private void reemplazarFragment(Fragment fragment){
